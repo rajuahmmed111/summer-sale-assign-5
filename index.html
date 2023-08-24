@@ -50,7 +50,7 @@
 
     <!-- main start -->
     <main>
-        <div class="flex flex-col lg:flex-row">
+        <div class="flex flex-col lg:flex-row gap-6">
             <!-- card -->
             <di>
                 <h3 class="text-4xl font-bold">Kitchenware</h3>
@@ -58,7 +58,7 @@
                     
                     <!-- Kitchenware card 1 -->
                     <div class="card w-96 bg-base-100 shadow-xl">
-                        <figure><img class="bg-[#f3f3f3]" src="images/prod1.png" alt="Shoes" /></figure>
+                        <figure><img id="image-1" class="bg-[#f3f3f3]" src="images/prod1.png" alt="Shoes" /></figure>
                         <div class="card-body">
                             <div class="rating">
                                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"
@@ -122,8 +122,25 @@
             </di>
 
             <!-- cart -->
-            <di>
-                <h4>Have coupon?</h4>
+            <di class="mt-9 p-4 shadow-xl">
+                <div class="shadow-xl">
+                    <h4 class="text-2xl font-semibold">Have coupon?</h4>
+                    <input type="text" class="border p-2 text-xl mt-5" placeholder="Coupon code">
+                    <button class="btn btn-secondary text-2xl">Apply</button>
+                </div>
+                <div class="mt-14">
+                    <h4 class="text-2xl font-semibold mt-4">1. Home Cooker</h4>
+                    <h4 class="text-2xl font-semibold mt-4">2. Sports cates</h4>
+                    <h4 class="text-2xl font-semibold mt-4">3. Home Cooker</h4>
+                    <br>
+                    <p class="text-2xl font-semibold mt-12">Total price: 00.00TK</p>
+                    <p class="text-2xl font-semibold mt-4">Discount : 00.00TK</p>
+                    <p class="text-2xl font-semibold mt-4">Total: 00.00 TK</p>
+                     <br> <br>
+                    <hr>
+
+                    <button class="btn btn-secondary w-full text-xl font-semibold mt-8">Make Purchase</button>
+                </div>
             </di>
         </div>
     </main>
